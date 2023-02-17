@@ -31,7 +31,9 @@ public class Triange extends Figure{
 
     @Override
     void showName() {
-        System.out.println("Figure is: " + getName());
+        if (check() == true)
+            System.out.println("Figure is: " + getName());
+        else System.out.println("Triangle is not exist");
     }
 
     @Override
