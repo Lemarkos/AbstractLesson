@@ -1,13 +1,18 @@
 public abstract class Figure {
-    String name;
-    float x;
-    float y;
+    private String name;
+    private float x;
+    private float y;
 
+    public Figure(String name) {
+        this.name = name;
+    }
 
-    abstract void getPerimeter();
-    abstract void getArea();
-    abstract void showName();
-    abstract void coordinate();
+        abstract void getPerimeter();
+        abstract void getArea();
+        abstract void showName();
+        abstract void coordinate();
 
-
+    public String getName() {
+        return name;
+    }
 }
