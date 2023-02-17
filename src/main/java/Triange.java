@@ -8,21 +8,25 @@ public class Triange extends Figure{
         this.c = c;
     }
 
-    void check(){
+    boolean  check(){
         if(a+b>c && a+c>b && c+b>a){
-            System.out.println("Triangle exists");
+            return true;
         }else
-            System.out.println("Triangle not exists");
+            return false;
     }
 
     @Override
     void getPerimeter() {
+        if (check() == true)
         System.out.println("Perimeter: " + (a + b + c));
+        else System.out.println("Can't calculate perimeter!!!");
     }
 
     @Override
     void getArea() {
+        if (check()==true)
         System.out.println("Area: " + (a + b + c)/2);
+        else System.out.println("Can't calculate are!!!");
     }
 
     @Override

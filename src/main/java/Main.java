@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Figure triangle = new Triange("Triangle", 5,7,9);
+        Figure triangle = new Triange("Triangle", 6,4,9);
         Figure rectangle = new Rectangle("Rectangle", 10,15);
         Figure square = new Square("Square", 5,5);
         Figure circle = new Circle("Circle", 8, 3.14);
